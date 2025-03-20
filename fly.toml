@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for speckle-compute-25-white-meadow-9939 on 2025-03-04T10:57:29Z
+# fly.toml app configuration file generated for speckle-compute-25-lively-snowflake-2463 on 2025-03-20T06:21:51+03:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'speckle-compute-25'
+app = 'speckle-compute-25-lively-snowflake-2463'
 primary_region = 'iad'
 kill_signal = 'SIGUSR1'
 kill_timeout = '5m0s'
@@ -45,6 +45,4 @@ kill_timeout = '5m0s'
     grace_period = '10s'
 
 [[vm]]
-  memory = '256mb'
-  cpu_kind = 'shared'
-  cpus = 1
+  size = 'shared-cpu-1x'
